@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(156,230,142);
+    background: radial-gradient(circle, rgba(156,230,142,1) 30%, rgba(253,187,45,1) 100%);
+}
+#titulo{
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: darkcyan;
+}
+#container_sec{
+    width: 700px;
+    padding: 50px 80px;
+    background-color: burlywood;
+    border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#container_input{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;  /* fazer a linha detalhe Before */
+}
+#container_input::before{
+    content: ''; /* debe haver mesmo vazio */
+    position: absolute; /*porque acima é relative */
+    width: 100%;
+    border-top: 3px solid rgba(53, 50, 50, 0.4);
+    margin-top: 70px;
+    /*viradinha da linha*/
+    height: 10px;
+    border-radius: 30px;
+}
+#container_inputtxt{
+    outline: none;
+    border: 2px solid burlywood;
+    border-radius: 15px;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+}
+#button_bnt{
+    width: 20%; /*somado com 80% acima fecha 100%*/
+    outline: none;
+    border: 1px solid burlywood;
+    background-color: orange;
+    border-radius: 15px;
+    margin-left: 5px;
+    color: #fff;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+#button_bnt:hover{
+    background-color: rgb(240, 189, 94);
+}
+
+#container_palavra{
+    color: rgb(112, 75, 6);
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#container_significado{
+    color: maroon;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+span{
+    font-size: 18px;
+    color: rgb(180, 4, 4);
+}
